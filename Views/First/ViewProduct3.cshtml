@@ -1,0 +1,10 @@
+@model learn_c_sharp_mvc.Models.Product
+@{
+    var product = ViewData["product"] as Product;
+}
+<div style="background-color: yellow; padding: 20px;">
+    <h1>Ten san pham: @product.Name</h1>
+    <span>Gia san pham: @product.Price</span>
+</div>
+<hr>
+@this.Path
